@@ -1,0 +1,343 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+li a{
+  text-decoration: none;
+  color: black;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.section1{
+  position: relative;
+  background: url(../assets/firstblonde.png);
+  background-size: cover;
+  background-position: right;
+  height: 95vh;
+  color: white;
+}
+
+header,nav{
+  background-color: white;
+  height: 35px;
+}
+
+li{
+  float: left;
+  list-style: none;
+  width: 12.5%;
+  font-family: 'Cinzel', serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+
+header nav li:first-child{
+  float: left;
+  list-style: none;
+  width: 12%;
+  font-family: 'Courgette';
+}
+.section1 section{
+  margin: 0 0 0 15%;
+  padding-top: 20px;
+  width: 40%;
+  height: 25%;
+}
+.section1 h1{
+  font-size: 70px;
+  font-family: 'Cinzel', serif;
+  font-weight: 400;
+}
+
+.section1 span a{
+  border: 1px solid black;
+  padding: 7px 18px;
+  background-color: black;
+  font-family: 'Cinzel', serif;
+  font-size: 13px;
+  text-decoration: none;
+  color: white;
+}
+
+.section1 p{
+  font-family: 'Cinzel', serif;
+}
+
+.section1 section + section{
+  border: 1px solid black;
+  border-radius: 15%;
+  width: 230px;
+  height: 215px;
+  background-color: black;
+  margin: 180px 0 0 15%;
+}
+
+@media all and (max-width: 1169px){
+  .section1 section + section{
+    margin: 280px 0 0 15%;
+  }
+}
+
+.section1 section + section a{
+  text-decoration: none;
+  color: white;
+}
+
+.section1 section + section p:hover{
+  border-left: 3px solid white;
+  padding-left: 10px;
+}
+
+.section1 section + section p{
+  padding-left: 15px;
+}
+
+.section2{
+  height: 385px;
+  text-align: center;
+  margin-top: -5px;
+}
+
+.section2 h3{
+  font-family: 'Cinzel', serif;
+}
+
+.section2 p{
+  font-family: 'Quicksand', serif;
+}
+
+.section2 section{
+  float: right;
+  width: 30%;
+  margin: 0 1.6%;
+  margin-top: 80px;
+}
+
+.section3{
+  background-color: rgba(228,233,237,237);
+  height: 380px;
+  text-align: center;
+}
+
+.section3 img{
+  height: 320px;
+}
+
+.section3 section{
+  margin-top: 30px;
+  width: 50%;
+  float: right;
+}
+
+.section3 section + section{
+  width: 35%;
+}
+
+.section3 h3{
+  font-family: 'Cinzel', serif;
+  font-size: 22px;
+}
+
+.section3 p{
+  font-family: 'Quicksand', serif;
+}
+
+.section3 span a{
+  border: 1px solid black;
+  padding: 7px 18px;
+  background-color: black;
+  font-family: 'Cinzel', serif;
+  font-size: 13px;
+  text-decoration: none;
+  color: white;
+}
+
+.section4 {
+	text-align: center;
+	margin: 5%;
+	overflow: hidden;
+}
+
+.section4 section {
+	width: 30%;
+	float: left;
+	margin: 0 1.5%;
+}
+
+.section4 img {
+	width: 80%;
+}
+
+.section4 div {
+	color: white;
+	background: black;
+	padding: 0.3rem 0;
+	position: relative;
+	top: -1rem;
+  font-family: 'Cinzel', serif;
+}
+
+.section4 span {
+	font-size: smaller;
+}
+
+.section5{
+  height: 350px;
+  background: url(../assets/section5model.png);
+  background-color: rgba(228,233,237,237);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 75%;
+}
+
+.section5 section{
+  position: relative;
+  margin-left: 20%;
+  top: 80px;
+  font-family: 'Cinzel', serif;
+
+}
+
+.section5 span a{
+  border: 1px solid black;
+  padding: 11px 21px;
+  background-color: black;
+  font-family: 'Cinzel', serif;
+  font-size: 13px;
+  text-decoration: none;
+  color: white;
+}
+
+.section5 p{
+  position: relative;
+  font-size: 35px;
+  bottom: 20px;
+}
+
+.section6{
+  height: 700px;
+  font-family: 'Cinzel', serif;
+  margin: 3% 20% 20% 20%;
+	text-align: center;
+}
+
+.section6 section {
+	width: 33%;
+	float: left;
+}
+
+.section6 img {
+	width: 100%;
+	padding: 2%;
+}
+
+
+
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+/* @media all and (max-width:820px){
+  nav,header,ul,li{
+    display: none;
+  }
+} */
+
+@media all and (max-width:650px){
+  .navdisappear{
+    display: none;
+  }
+}
+
+@media all and (max-width:650px){
+  .navKeep{
+    width: 31%;
+  }
+}
+@media all and (max-width:650px){
+header nav li:first-child{
+  width: 36%;
+
+  }
+}
+
+@media all and (max-width:475px){
+  .section1{
+    width: 74vh;
+    }
+  }
+
+
+@media all and (max-width:820px){
+  .section2 {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    align-items: center;
+    /* margin-left: 175px; */
+  }
+}
+
+@media all and (max-width:698px){
+  .section2 section{
+   margin: 3px -5px;
+  }
+}
+
+@media all and (max-width:820px){
+  .section3, .section3 section + section {
+    width: auto;
+  }
+}
+
+@media all and (max-width:820px){
+  .section3 p {
+    margin: 0 50px 35px 50px;
+  }
+}
+
+@media all and (max-width:820px){
+  .section3 img {
+    display: none;
+
+  }
+}
+
+@media all and (max-width:820px){
+  .section4 {
+    display: none;
+
+  }
+}
+
+@media all and (max-width:820px){
+  .section6 section {
+    width: auto;
+
+  }
+}
